@@ -16,10 +16,9 @@ module.exports = (env) => {
   console.log(`ENV`, env);
 
   console.log(`env.output`, env.output);
-  // const outputPath = env.output
-  //   ? path.resolve(env.output, pjson.name)
-  //   : path.resolve(__dirname, "../project/noodl_modules/" + pjson.name);
-  const outputPath = path.resolve(env.output, pjson.name)
+  const outputPath = env.output
+    ? path.resolve(env.output, pjson.name)
+    : path.resolve(__dirname, "../project/noodl_modules/" + pjson.name);
   return {
     entry: "./src/index.js",
     mode: "production",
