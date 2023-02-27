@@ -1,0 +1,5 @@
+module/node_modules
+tests/noodl_modules/noodl-lexical
+project/noodl_modules/noodl-lexical
+module/src/.DS_Store
+noodl_modules
